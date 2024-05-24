@@ -22,7 +22,7 @@ sequenceDiagram
     Note over Azure Pipelines,Azure Pipelines: Virtual environment baseado em macOS
     Azure Pipelines->>+CocoaPods task: Instalar dependências do CocoaPods
     Azure Pipelines->>+InstallAppleCertificate task: Instalar certificado
-    Azure Pipelines->>+InstallAppleProvisioningProfile task: Instalar certificado
+    Azure Pipelines->>+InstallAppleProvisioningProfile task: Instala um Apple provisioning profile para build em um macOS agent
     Azure Pipelines->>+SDK: Restaurar dependências
     Note over Azure Pipelines,SDK: Restore usando dotnet, npm, pod install ou xcodebuild
     Azure Pipelines->>+SDK: Build do app gerando um arquivo .ipa
