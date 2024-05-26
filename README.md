@@ -20,7 +20,6 @@ sequenceDiagram
     rect rgb(191, 223, 255)
     Azure Pipelines->>+Azure Pipelines: Iniciar execução da automação
     Note over Azure Pipelines,Azure Pipelines: Virtual environment baseado em macOS
-    Azure Pipelines->>+CocoaPods task: Instalar dependências do CocoaPods
     Azure Pipelines->>+InstallAppleCertificate task: Instalar certificado
     Azure Pipelines->>+InstallAppleProvisioningProfile task: Instala um Apple provisioning profile para build em um macOS agent
     Azure Pipelines->>+SDK: Restaurar dependências
