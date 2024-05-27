@@ -1,11 +1,3 @@
-# AzureDevOps-Build-iOS
-Materiais de apoio para build de apps iOS no Azure DevOps/Azure Pipelines.
-
----
-
-## Fluxo básico
-
-```mermaid
 sequenceDiagram
     actor Desenvolvedor
     participant Azure Repos
@@ -33,28 +25,3 @@ sequenceDiagram
     Apple App Store extension->>+Apple App Store extension: Disparar trigger executando automação
     Note over Apple App Store extension,Apple App Store extension: O TestFlight é uma plataforma de testes da Apple,<br/>sendo recomendável seu uso antes da subida para Produção
     end
-```
-
----
-
-## Azure DevOps / Azure Pipelines
-
-Documentação sobre Virtual Environments: [**link**](https://github.com/actions/runner-images)
-
-A seguir estão indicadas as tasks e extensões referenciadas no diagrama.
-
-### InstallAppleCertificate e InstallAppleProvisioningProfile tasks
-
-Tasks já pré-instaladas por default no **Azure Pipelines**.
-
-![alt](img/install-apple-tasks.png)
-
-### Apple App Store extension
-
-Extensão gratuita, podendo ser instalada via **Marketplace**: [**link**](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
-
-![alt](img/apple-app-store-extension.png)
-
-Task **AppStoreRelease**:
-
-![alt](img/apple-app-store-release-task.png)
