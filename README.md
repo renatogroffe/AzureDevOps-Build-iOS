@@ -1,6 +1,8 @@
 # AzureDevOps-Build-iOS
 Materiais de apoio para build de apps iOS no Azure DevOps/Azure Pipelines.
 
+A elaboração desta documentação só foi possível graças ao apoio e dicas que recebi de meu amigo **João Paulo Antunes**. Deixo aqui meu muitíssimo obrigado ao João, por todos os insights valiosos que ele me forneceu sobre o build e a publicação de apps na Apple Store. Agradeço ainda aos amigos **Thiago Bertuzzi** e **Ione Souza Jr.**, que revisaram e sugeriram melhorias no diagrama que disponibilizei aqui.
+
 ---
 
 ## Fluxo básico
